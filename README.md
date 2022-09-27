@@ -1,13 +1,13 @@
 # LeaveManagement / Gestion de congé - GCongé :smile:
 <h2 align="center" style="font-size:2rem">A Single page Application (SPA) representing a small platform to manage Leave request in a company!!</h2>
 
-|Admin Dashboard|User Dashboard|
+|x|y|
 |---|---|
 |![Admin-dashboard](images/admin-dashboard.PNG)|![Admin-dashboard](images/user-dashboard.PNG)|
 |![Login screen](https://github.com/faouziMohamed/LeaveManagement/blob/master/images/login-screen.PNG)|![Admin action](https://github.com/faouziMohamed/LeaveManagement/blob/master/images/admin-action.PNG)|
 ## Tech
 The app is Fully written in C# (with some little mini mini small :child: amount of Javascript).  
-- The frontend is written with Microsoft's **Blazor Web Assembly** using bootsrap 5 for stealing.
+- The frontend is written with Microsoft's **Blazor Web Assembly** using bootsrap 5 for styling.
 - The Backend is Written With Microsoft's Asp.net Core. A blazing fast Web framework!!!!!
 
 The communication between them is backed with REST.
@@ -23,13 +23,13 @@ The communication between them is backed with REST.
 - Install Mysql 
 
 - Open the solution and set the `GConge.web.api` as **Startup project**
-- Run migrations command to initiate the Database
+- Run migrations command to initialize the Database
 - Run the backend server => 
   ```powershel
   cd GConge.web.api
   dotnet watch
   ```
-- Run the frontend server
+- Run the frontend server =>
   ```powershel
   cd GConge.Web.Client
   dotnet watch
