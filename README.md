@@ -23,13 +23,13 @@ The communication between them is backed with REST.
 - Install Mysql 
 
 - Open the solution and set the `GConge.web.api` as **Startup project**
-- Run migrations command to initiate the Database
+- Run migrations command to initialize the Database
 - Run the backend server => 
   ```powershel
   cd GConge.web.api
   dotnet watch
   ```
-- Run the frontend server
+- Run the frontend server =>
   ```powershel
   cd GConge.Web.Client
   dotnet watch
