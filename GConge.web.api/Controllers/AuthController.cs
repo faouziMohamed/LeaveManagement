@@ -26,6 +26,12 @@ public class AuthController : ControllerBase
     _jwtAuthenticationService = jwtAuthenticationService;
   }
 
+  /// <summary>
+  ///   Register a new user in the system as an employee and a normal user
+  /// </summary>
+  /// <param name="request"></param>
+  /// <param name="isAdmin"></param>
+  /// <returns></returns>
   [AllowAnonymous]
   [HttpPost("register")]
   public async Task<IActionResult> Register([FromBody] UserRegisterRequestDto request, [FromQuery] bool isAdmin = false)
