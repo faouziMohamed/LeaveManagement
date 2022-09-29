@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.Threading.Tasks;
 using GConge.Models.Models.Entities;
 
 namespace GConge.web.api.Repositories.Contracts;

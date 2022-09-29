@@ -1,4 +1,5 @@
-﻿using Blazored.LocalStorage;
+﻿using System.Threading.Tasks;
+using Blazored.LocalStorage;
 using GConge.Models.DTOs.Auth;
 using GConge.Web.Client.Services.Contracts;
 using Microsoft.AspNetCore.Components;

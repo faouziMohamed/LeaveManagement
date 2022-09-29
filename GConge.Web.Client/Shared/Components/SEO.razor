@@ -1,0 +1,95 @@
+﻿
+@code
+{
+  [Parameter]
+  public RenderFragment? ChildContent { get; set; }
+
+  [Parameter]
+#pragma warning disable CS8618
+  public string Title { get; set; }
+
+  [Parameter]
+  public string? SiteName { get; set; }
+
+  [Parameter]
+  public string? Description { get; set; }
+
+  [Parameter]
+  public string? Url { get; set; }
+
+  [Parameter]
+  public string? Type { get; set; }
+
+  [Parameter]
+  public string? Robots { get; set; }
+
+  [Parameter]
+  public string? Image { get; set; }
+
+  [Parameter]
+  public string? PublishDate { get; set; }
+
+  [Parameter]
+  public string? SectionName { get; set; }
+
+  [Parameter]
+  public string? Author { get; set; }
+
+  [Inject]
+  public NavigationManager Router { get; set; } = null!;
+}
+
+<PageTitle>@Title</PageTitle>
+
+<HeadContent>
+  <meta name="twitter:title" content="@Title"/>
+  @if (Robots != null)
+  {
+    <meta name="robots" content="@Robots"/>
+  }
+  @if (Description != null)
+  {
+    <meta name="description" content="@Description"/>
+    <meta name="twitter:description" content="@Description"/>
+    <meta property="og:description" content="@Description"/>
+  }
+  @if (Url != null)
+  {
+    <meta property="og:url" content="@Url"/>
+    <link rel="canonical" href="@Url"/>
+  }
+  @if (Image != null)
+  {
+    <meta name="image" property="og:image" content="@Image"/>
+    <meta name="twitter:image" content="@Image"/>
+  }
+  @if (Type != null)
+  {
+    <meta property="og:type" content="@Type"/>
+  }
+  @if (SiteName != null)
+  {
+    <meta property="og:site_name" content="@SiteName"/>
+  }
+  @if (SectionName != null)
+  {
+    <meta property="og:sectionName" content="@SectionName"/>
+  }
+  @if (PublishDate != null)
+  {
+    <meta property="article:published_time" content="@PublishDate"/>
+    <meta name="publish_date" property="og:publish_date" content="@PublishDate"/>
+  }
+
+  @if (Author != null)
+  {
+    <meta name="author" content="@Author"/>
+    <meta name="twitter:creator" content="@Author"/>
+    <meta property="article:author" content="@Author"/>
+  }
+</HeadContent>
+
+@if (ChildContent != null)
+{
+  @ChildContent
+}

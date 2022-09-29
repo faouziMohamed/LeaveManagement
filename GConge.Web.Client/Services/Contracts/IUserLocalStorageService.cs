@@ -1,4 +1,5 @@
-﻿using GConge.Models.DTOs.Auth;
+﻿using System.Threading.Tasks;
+using GConge.Models.DTOs.Auth;
 
 namespace GConge.Web.Client.Services.Contracts;
 

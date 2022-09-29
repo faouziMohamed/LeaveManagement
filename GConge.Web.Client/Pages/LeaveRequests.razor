@@ -12,7 +12,6 @@
     await LeaveRequestLocalStorage.DeleteFromLocalStorage(removedRequest);
     LeaveRequests = LeaveRequests.Where(x => x.LeaveRequestId != removedRequest.LeaveRequestId).ToList();
   }
-
   protected async Task OnUpdate(LeaveRequestDto updatedRequest)
   {
 
@@ -31,6 +30,8 @@
     LeaveRequests = LeaveRequests.Where(x => x.LeaveRequestId != updatedRequest.LeaveRequestId).ToList();
     LeaveRequests.Add(updatedRequest);
   }
+
+  private string Title = "Gestions des congés";
 }
 
 <ContentWrapper>

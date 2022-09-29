@@ -1,4 +1,6 @@
-﻿using GConge.Models.DTOs.Auth;
+﻿using System;
+using System.Threading.Tasks;
+using GConge.Models.DTOs.Auth;
 using GConge.Models.Models;
 using GConge.Models.Models.Entities;
 using GConge.Models.Utils;
@@ -6,6 +8,7 @@ using GConge.web.api.Extensions;
 using GConge.web.api.Repositories.Contracts;
 using GConge.web.api.Services.Contracts;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace GConge.web.api.Controllers;

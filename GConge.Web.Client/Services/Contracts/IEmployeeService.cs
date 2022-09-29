@@ -1,4 +1,6 @@
-﻿using GConge.Models.DTOs.Employees;
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
+using GConge.Models.DTOs.Employees;
 
 namespace GConge.Web.Client.Services.Contracts;
 

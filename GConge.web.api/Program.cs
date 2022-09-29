@@ -3,6 +3,9 @@ using GConge.web.api.Repositories;
 using GConge.web.api.Repositories.Contracts;
 using GConge.web.api.Services;
 using GConge.web.api.Services.Contracts;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 
 var builder = WebApplication.CreateBuilder(args);
 

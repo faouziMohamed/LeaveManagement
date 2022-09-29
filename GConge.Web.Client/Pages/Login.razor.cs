@@ -15,6 +15,11 @@ public class LoginBase : ComponentBase
   protected bool IsLoading;
 
   [Inject]
+  public IOpenGraphImageService Og { get; set; }
+
+  public string OgImage { get; set; }
+
+  [Inject]
   protected NavigationManager Router { get; set; } = default!;
 
   [Inject]
@@ -37,6 +42,17 @@ public class LoginBase : ComponentBase
       Router.NavigateTo(uri: Redirect ?? "/manage-leaves", true);
       return;
     }
+
+    OgImage = Og.GetOpenGraphLink(new OpenGraph
+      {
+        Description = "Connectez-vous à votre compte GCongé pour gérer vos congés et absences.",
+        TemplateTitle = "GCongé - Connexion",
+        SiteName = "GCongé",
+        Theme = "dark",
+        Logo = "https://raw.githubusercontent.com/faouziMohamed/social-share/main/public/sc-icons/logo/sc-light.png"
+
+      }
+    );
 
     ReadEmailQuery(queryDict);
   }

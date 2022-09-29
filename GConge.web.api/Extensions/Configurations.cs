@@ -1,9 +1,12 @@
-﻿using System.Text;
+﻿using System;
+using System.Text;
 using GConge.Models.Models.Identity;
 using GConge.Models.Utils;
 using GConge.web.api.Data;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 
 namespace GConge.web.api.Extensions;

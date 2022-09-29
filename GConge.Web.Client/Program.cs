@@ -20,6 +20,7 @@ builder.Services.AddScoped(static _ => new HttpClient
 
 builder.Services.AddBlazoredLocalStorage();
 builder.Services.AddScoped<IAuthService, AuthService>();
+builder.Services.AddScoped<IOpenGraphImageService, OpenGraphImageService>();
 builder.Services.AddScoped<IEmployeeService, EmployeeService>();
 builder.Services.AddScoped<ILeaveRequestService, LeaveRequestService>();
 builder.Services.AddScoped<IUserLocalStorageService, UserLocalStorageService>();

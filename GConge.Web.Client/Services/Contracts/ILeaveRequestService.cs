@@ -1,4 +1,6 @@
-﻿using GConge.Models.DTOs.LeaveRequest;
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
+using GConge.Models.DTOs.LeaveRequest;
 
 namespace GConge.Web.Client.Services.Contracts;
 

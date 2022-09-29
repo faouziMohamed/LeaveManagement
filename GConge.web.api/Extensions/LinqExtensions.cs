@@ -1,4 +1,5 @@
-﻿using GConge.Models.Models.Entities;
+﻿using System.Linq;
+using GConge.Models.Models.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Query;
 

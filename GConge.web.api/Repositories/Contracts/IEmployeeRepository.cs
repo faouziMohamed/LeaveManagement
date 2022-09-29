@@ -1,4 +1,6 @@
-﻿using GConge.Models.Models.Entities;
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
+using GConge.Models.Models.Entities;
 
 namespace GConge.web.api.Repositories.Contracts;
 

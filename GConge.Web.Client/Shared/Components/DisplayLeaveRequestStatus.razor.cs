@@ -1,4 +1,6 @@
-﻿using GConge.Models.DTOs.Auth;
+﻿using System;
+using System.Threading.Tasks;
+using GConge.Models.DTOs.Auth;
 using GConge.Models.DTOs.LeaveRequest;
 using GConge.Models.Models;
 using GConge.Web.Client.Services.Contracts;

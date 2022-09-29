@@ -30,4 +30,8 @@
             <CopyToOutputDirectory>Always</CopyToOutputDirectory>
         </None>
     </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="wwwroot\favicon" />
+    </ItemGroup>
 </Project>

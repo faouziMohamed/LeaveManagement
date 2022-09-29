@@ -1,4 +1,6 @@
-﻿using GConge.Models.Models.Entities;
+﻿using System;
+using System.Threading.Tasks;
+using GConge.Models.Models.Entities;
 using GConge.web.api.Data;
 using GConge.web.api.Repositories.Contracts;
 using Microsoft.EntityFrameworkCore;

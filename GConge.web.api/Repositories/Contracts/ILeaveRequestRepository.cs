@@ -1,4 +1,6 @@
-﻿using GConge.Models.DTOs.LeaveRequest;
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
+using GConge.Models.DTOs.LeaveRequest;
 using GConge.Models.Models.Entities;
 
 namespace GConge.web.api.Repositories.Contracts;
