@@ -1,4 +1,4 @@
-# LeaveManagement / Gestion de congé - GCongé :smile:
+# LeaveManagement /(Gestion de congé) - GCongé :smile:
 <h2 align="center" style="font-size:2rem">A Single page Application (SPA) representing a small platform to manage Leave request in a company!!</h2>
 
 |Admin Dashboard|User Dashboard|
@@ -7,14 +7,14 @@
 |![Login screen](https://github.com/faouziMohamed/LeaveManagement/blob/master/images/login-screen.PNG)|![Admin action](https://github.com/faouziMohamed/LeaveManagement/blob/master/images/admin-action.PNG)|
 ## Tech
 The app is Fully written in C# (with some little mini mini small :child: amount of Javascript).  
-- The frontend is written with Microsoft's **Blazor Web Assembly** using bootsrap 5 for stealing.
+- The frontend is written with Microsoft's **Blazor Web Assembly** using bootstrap 5 for styling.
 - The Backend is Written With Microsoft's Asp.net Core. A blazing fast Web framework!!!!!
 
 The communication between them is backed with REST.
 
 ### Why using them ?
-- Because i love DotNet Ecosystem and Microsoft is doing a greate job now with the Dotnet 6+ Platform.
-- I wanted to test the legend of writtent frontend SPA without relying on JS unlike react/angular/....
+- Because i love DotNet Ecosystem and Microsoft is doing a great job now with the Dotnet 6+ Platform.
+- I wanted to test the legend of written frontend SPA without relying on JS unlike react/angular/....
 - It's a plus on Clean architecture for me
 -...
 
